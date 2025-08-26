@@ -1,7 +1,6 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Target, Eye, Heart, Users, Award, Quote } from "lucide-react"
 
 export default function AboutSection() {
@@ -121,36 +120,6 @@ export default function AboutSection() {
           </Card>
         </div>
 
-        {/* Values Grid */}
-        <div className="mb-20">
-          <div className="text-center space-y-4 mb-12">
-            <h3 className="text-3xl font-bold text-foreground">O que nos move</h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Nossos valores fundamentais guiam cada decisão em nossa jornada de excelência em planos de saúde e
-              odontológicos
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => {
-              const IconComponent = value.icon
-              return (
-                <Card key={index} className="p-6 bg-white border-0 shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-0 space-y-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <IconComponent className="w-6 h-6 text-primary" />
-                    </div>
-                    <div className="space-y-2">
-                      <h4 className="text-lg font-bold text-foreground">{value.title}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
-        </div>
-
         {/* Testimonials */}
         <div className="mb-16">
           <div className="text-center space-y-4 mb-12">
@@ -181,35 +150,6 @@ export default function AboutSection() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center space-y-6 bg-primary/5 rounded-2xl p-8 lg:p-12">
-          <div className="space-y-4">
-            <h3 className="text-2xl lg:text-3xl font-bold text-foreground">Pronto para encontrar o plano ideal?</h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Solicite uma cotação sem compromisso e descubra como podemos ajudar você a encontrar os melhores planos de
-              saúde e odontológicos.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              onClick={redirectToWhatsApp}
-            >
-              Solicitar Cotação
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary/5 bg-transparent"
-              onClick={handleConhecerCases}
-            >
-              Conhecer Cases de Sucesso
-            </Button>
           </div>
         </div>
       </div>

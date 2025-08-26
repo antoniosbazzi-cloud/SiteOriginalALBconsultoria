@@ -1,8 +1,7 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Shield, Users, Heart, Calculator, FileText, Headphones, CheckCircle, ArrowRight } from "lucide-react"
+import { Shield, Users, Heart, Calculator, FileText, Headphones, CheckCircle } from "lucide-react"
 
 export default function ServicesSection() {
   const redirectToWhatsApp = () => {
@@ -96,38 +95,6 @@ export default function ServicesSection() {
               </Card>
             )
           })}
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center space-y-6">
-          <div className="space-y-4">
-            <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
-              Pronto para encontrar o plano ideal para você?
-            </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Nossa equipe de especialistas está pronta para criar uma solução personalizada que atenda às suas
-              necessidades específicas em planos de saúde e odontológicos.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              onClick={redirectToWhatsApp}
-            >
-              Solicitar Cotação Gratuita
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary/5 bg-transparent"
-              onClick={redirectToWhatsApp}
-            >
-              Falar com Especialista
-            </Button>
-          </div>
         </div>
       </div>
     </section>

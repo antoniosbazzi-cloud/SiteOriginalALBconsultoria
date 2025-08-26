@@ -190,12 +190,22 @@ Aguardo retorno. Obrigado!`
 
         {/* Operadoras Parceiras section */}
         <div className="mt-20">
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="text-center mb-8">
+            <h3 className="text-4xl lg:text-5xl font-bold text-foreground">Algumas das operadoras parceiras</h3>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-lg">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ln5EGsgKCGiN7EPpFbcxH24HC6PW7I.png"
-              alt="Logotipos das principais operadoras de planos de saúde parceiras"
-              className="w-full h-auto"
+              src="/images/operadoras-parceiras.webp"
+              alt="Logotipos das principais operadoras de planos de saúde parceiras: Bradesco Saúde, Hapvida, Amil, NotreDame Intermédica, SulAmérica e Porto Seguro"
+              className="w-3/5 h-auto mx-auto"
             />
+          </div>
+        </div>
+
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
+          <div className="flex items-center justify-center h-full">
+            <Shield className="w-96 h-96 text-primary" />
           </div>
         </div>
       </div>
@@ -228,13 +238,6 @@ Aguardo retorno. Obrigado!`
           </div>
         </div>
       )}
-
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
-        <div className="flex items-center justify-center h-full">
-          <Shield className="w-96 h-96 text-primary" />
-        </div>
-      </div>
     </section>
   )
 }
